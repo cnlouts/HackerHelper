@@ -1,0 +1,5 @@
+[2014-07-07 18:46:06] [ERROR] errorTraceback (most recent call last):
+  File "E:/VSProject/HackerHelper/VulScanner/VulScanner.py", line 52, in <module>
+    1/0
+ZeroDivisionError: integer division or modulo by zero
+

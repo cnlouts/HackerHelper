@@ -1,0 +1,14 @@
+E:\VSProject\HackerHelper\HackerHelper\bin\Debug\HackerHelper.exe.config
+E:\VSProject\HackerHelper\HackerHelper\bin\Debug\HackerHelper.exe
+E:\VSProject\HackerHelper\HackerHelper\bin\Debug\HackerHelper.pdb
+E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.Main.resources
+E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.Properties.Resources.resources
+E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.csproj.GenerateResource.Cache
+E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.exe
+E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.pdb
+E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.usercontrols.webDirForce.resources
+E:\VSProject\HackerHelper\HackerHelper\bin\Debug\log4net.dll
+E:\VSProject\HackerHelper\HackerHelper\bin\Debug\log4net.xml
+E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.usercontrols.googleUrlCapture.resources
+E:\VSProject\HackerHelper\HackerHelper\bin\Debug\Newtonsoft.Json.dll
+E:\VSProject\HackerHelper\HackerHelper\bin\Debug\Newtonsoft.Json.xml

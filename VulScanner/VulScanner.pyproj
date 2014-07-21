@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>dadea7f5-8eaa-4c94-88cf-5ebd14418a48</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>VulScanner.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>VulScanner</Name>
+    <RootNamespace>VulScanner</RootNamespace>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="lib\core\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\utils\encryptHelper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\utils\log.py" />
+    <Compile Include="lib\utils\net\ftp.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\utils\net\http.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\utils\net\mssql.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\utils\net\mysql.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\utils\net\oracle.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\utils\net\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\utils\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lib\__init__.py" />
+    <Compile Include="plugins\__init__.py" />
+    <Compile Include="VulScanner.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+    <Folder Include="lib\core\" />
+    <Folder Include="lib\utils\" />
+    <Folder Include="lib\utils\net\" />
+    <Folder Include="log\" />
+    <Folder Include="config\" />
+    <Folder Include="plugins\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\setup.ini" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

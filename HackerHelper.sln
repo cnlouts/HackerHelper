@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{D0FFE8AA-B9A5-46CC-95DA-734EA354BDA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VulScanner", "VulScanner", "{AA686A20-9E29-47AA-A2BA-47FC117C5C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{ED59138A-64A7-492C-BD09-15DB3B52CC1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI.Tests", "WebUI.Tests\WebUI.Tests.csproj", "{6CD69049-939E-4394-92CE-05D34D3EC95B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WinUI", "WinUI", "{6FBC972A-7EB8-4AFE-B2A2-48A14186A902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerHelper", "HackerHelper\HackerHelper.csproj", "{EC48D4F1-EC5B-40B5-8987-9BCA0DF858C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{63EEDF02-D701-4400-B001-573E4951AEDF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED59138A-64A7-492C-BD09-15DB3B52CC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED59138A-64A7-492C-BD09-15DB3B52CC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED59138A-64A7-492C-BD09-15DB3B52CC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED59138A-64A7-492C-BD09-15DB3B52CC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD69049-939E-4394-92CE-05D34D3EC95B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD69049-939E-4394-92CE-05D34D3EC95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD69049-939E-4394-92CE-05D34D3EC95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD69049-939E-4394-92CE-05D34D3EC95B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC48D4F1-EC5B-40B5-8987-9BCA0DF858C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC48D4F1-EC5B-40B5-8987-9BCA0DF858C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC48D4F1-EC5B-40B5-8987-9BCA0DF858C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC48D4F1-EC5B-40B5-8987-9BCA0DF858C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED59138A-64A7-492C-BD09-15DB3B52CC1D} = {D0FFE8AA-B9A5-46CC-95DA-734EA354BDA3}
+		{6CD69049-939E-4394-92CE-05D34D3EC95B} = {D0FFE8AA-B9A5-46CC-95DA-734EA354BDA3}
+		{EC48D4F1-EC5B-40B5-8987-9BCA0DF858C8} = {6FBC972A-7EB8-4AFE-B2A2-48A14186A902}
+	EndGlobalSection
+EndGlobal

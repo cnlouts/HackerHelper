@@ -1,0 +1,52 @@
+
+[2014-07-06 16:27:34] [INFO] test
+
+[2014-07-06 16:27:34] [INFO] test2
+
+[2014-07-06 16:35:38] [INFO] test info
+
+[2014-07-06 16:45:49] [INFO] test info
+
+[2014-07-06 16:58:47] [INFO] test info
+
+[2014-07-06 17:21:07] [INFO] test inf sdasdasdaso ok!
+ 
+[2014-07-06 17:47:12] [INFO] test inf sdasdasdaso
+
+[2014-07-06 17:47:12] [ERROR] '_hashlib.HASH' object has no attribute 'hexdigset'
+
+[2014-07-06 17:47:44] [INFO] test inf sdasdasdaso
+
+[2014-07-06 17:47:44] [ERROR] '_hashlib.HASH' object has no attribute 'hexdigset'
+
+[2014-07-06 17:48:12] [INFO] test inf sdasdasdaso
+
+[2014-07-06 17:48:12] [ERROR] '_hashlib.HASH' object has no attribute 'hexdigset'
+
+[2014-07-06 17:48:24] [ERROR] '_hashlib.HASH' object has no attribute 'hexdigset'
+
+[2014-07-06 18:00:21] [ERROR] must be string or buffer, not None
+
+[2014-07-06 18:45:27] [ERROR] 'int' object is not iterable
+
+[2014-07-06 18:46:08] [ERROR] 'int' object is not iterable
+
+[2014-07-06 18:46:51] [ERROR] 'int' object is not iterable
+
+[2014-07-06 18:47:48] [ERROR] 'int' object is not iterable
+
+[2014-07-06 18:52:29] [ERROR] ord() expected a character, but string of length 5 found
+
+[2014-07-06 19:48:30] [ERROR] 'builtin_function_or_method' object has no attribute '__getitem__'
+
+[2014-07-06 19:54:47] [ERROR] 'builtin_function_or_method' object has no attribute '__getitem__'
+
+[2014-07-06 19:55:00] [ERROR] 'builtin_function_or_method' object has no attribute '__getitem__'
+
+[2014-07-06 19:57:16] [ERROR] 'builtin_function_or_method' object has no attribute '__getitem__'
+
+[2014-07-06 19:58:45] [ERROR] 'builtin_function_or_method' object has no attribute '__getitem__'
+
+[2014-07-06 20:26:27] [ERROR] global name 'cooke' is not defined
+
+[2014-07-06 20:27:26] [ERROR] global name 'cooke' is not defined
