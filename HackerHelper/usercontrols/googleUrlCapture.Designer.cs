@@ -32,9 +32,14 @@
             this.txtKeywords = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnOutput = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbPageNum = new System.Windows.Forms.ComboBox();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.btnClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +61,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(592, 13);
+            this.btnSearch.Location = new System.Drawing.Point(590, 10);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(87, 27);
             this.btnSearch.TabIndex = 2;
@@ -69,6 +74,10 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView1.Location = new System.Drawing.Point(0, 79);
             this.dataGridView1.Name = "dataGridView1";
@@ -76,19 +85,41 @@
             this.dataGridView1.Size = new System.Drawing.Size(680, 570);
             this.dataGridView1.TabIndex = 3;
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column2.HeaderText = "URL";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.HeaderText = "CONTENT";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
             // btnOutput
             // 
-            this.btnOutput.Location = new System.Drawing.Point(592, 46);
+            this.btnOutput.Location = new System.Drawing.Point(590, 46);
             this.btnOutput.Name = "btnOutput";
             this.btnOutput.Size = new System.Drawing.Size(87, 27);
             this.btnOutput.TabIndex = 4;
             this.btnOutput.Text = "导出";
             this.btnOutput.UseVisualStyleBackColor = true;
+            this.btnOutput.Click += new System.EventHandler(this.btnOutput_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 46);
+            this.label1.Location = new System.Drawing.Point(3, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 15);
             this.label1.TabIndex = 5;
@@ -97,15 +128,34 @@
             // cmbPageNum
             // 
             this.cmbPageNum.FormattingEnabled = true;
-            this.cmbPageNum.Location = new System.Drawing.Point(76, 43);
+            this.cmbPageNum.Location = new System.Drawing.Point(76, 46);
             this.cmbPageNum.Name = "cmbPageNum";
-            this.cmbPageNum.Size = new System.Drawing.Size(121, 23);
+            this.cmbPageNum.Size = new System.Drawing.Size(86, 23);
             this.cmbPageNum.TabIndex = 6;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(168, 46);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(323, 23);
+            this.progressBar1.TabIndex = 7;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(499, 46);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(87, 27);
+            this.btnClear.TabIndex = 8;
+            this.btnClear.Text = "清空";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // googleUrlCapture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.cmbPageNum);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOutput);
@@ -132,5 +182,10 @@
         private System.Windows.Forms.Button btnOutput;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbPageNum;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button btnClear;
     }
 }

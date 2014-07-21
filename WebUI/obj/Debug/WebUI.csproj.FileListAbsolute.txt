@@ -145,3 +145,4 @@ E:\VSProject\HackerHelper\WebUI\bin\zh-Hans\Microsoft.Owin.Security.Twitter.reso
 E:\VSProject\HackerHelper\WebUI\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 E:\VSProject\HackerHelper\WebUI\obj\Debug\WebUI.dll
 E:\VSProject\HackerHelper\WebUI\obj\Debug\WebUI.pdb
+E:\VSProject\HackerHelper\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache

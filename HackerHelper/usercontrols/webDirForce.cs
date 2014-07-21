@@ -17,6 +17,7 @@ namespace HackerHelper.usercontrols
     {
         private string _dictPath;
         private List<string> _list;
+
         public WebDirForce()
         {
             InitializeComponent();
@@ -38,6 +39,21 @@ namespace HackerHelper.usercontrols
                 MessageBox.Show("请选择字典！");
 
             }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this._list = null;
+            this.txtDict.Text = "";
+            this.txtTargetUrl.Text = "";
+            this.progressBar1.Value = 0;
+            this.dataGridView.Rows.Clear();
+        }
+
+        private void btnOutput_Click(object sender, EventArgs e)
+        {
+            saveFile();
+            MessageBox.Show("导出完毕");
         }
 
         private static async Task<string> RunAsync(string url)
@@ -96,6 +112,39 @@ namespace HackerHelper.usercontrols
                 return;
             }
         }
+        
+
+        /// <summary>
+        /// 保存结果
+        /// </summary>
+        private async void saveFile()
+        {
+            if (this.dataGridView.Rows.Count <= 0) return;
+            string savePath = "";
+            SaveFileDialog saveFile = new SaveFileDialog();
+            if (saveFile.ShowDialog() == DialogResult.OK)
+            {
+                savePath = saveFile.FileName;
+            }
+            //拼接大量字符窜使用stringBuilder
+            StringBuilder sbBuilder = new StringBuilder();
+            for (int i = 0; i < this.dataGridView.Rows.Count; i++)
+            {
+                sbBuilder.Append(string.Format("id:{0};\tstatus:{2};\tpath:{1}{3}", this.dataGridView.Rows[i].Cells[0].Value, this.dataGridView.Rows[i].Cells[1].Value, this.dataGridView.Rows[i].Cells[2].Value, Environment.NewLine));
+            }
+            //使用异步写入文件
+            using (StreamWriter sw = new StreamWriter(savePath))
+            {
+                await sw.WriteLineAsync(sbBuilder.ToString());
+            }
+
+        }
+
+        /// <summary>
+        /// 加载字典
+        /// </summary>
+        /// <param name="dictPath"></param>
+        /// <returns></returns>
         private async Task<List<string>> ReadDict(string dictPath)
         {
             List<string> list = new List<string>();
@@ -108,42 +157,6 @@ namespace HackerHelper.usercontrols
                 }
             }
             return list;
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            this._list = null;
-            this.txtDict.Text = "";
-            this.txtTargetUrl.Text = "";
-            this.progressBar1.Value = 0;
-            this.dataGridView.Rows.Clear();
-        }
-
-        private void btnOutput_Click(object sender, EventArgs e)
-        {
-            saveFile();
-            MessageBox.Show("导出完毕");
-        }
-
-        private async void saveFile()
-        {
-            if (this.dataGridView.Rows.Count <= 0) return;
-            string savePath = "";
-            SaveFileDialog saveFile = new SaveFileDialog();
-            if (saveFile.ShowDialog() == DialogResult.OK)
-            {
-                savePath = saveFile.FileName;
-            }
-            StringBuilder sbBuilder = new StringBuilder();
-            for (int i = 0; i < this.dataGridView.Rows.Count; i++)
-            {
-                sbBuilder.Append(string.Format("id:{0};\tstatus:{2};\tpath:{1}{3}", this.dataGridView.Rows[i].Cells[0].Value, this.dataGridView.Rows[i].Cells[1].Value, this.dataGridView.Rows[i].Cells[2].Value, Environment.NewLine));
-            }
-            using (StreamWriter sw = new StreamWriter(savePath))
-            {
-                await sw.WriteLineAsync(sbBuilder.ToString());
-            }
-
         }
     }
 }

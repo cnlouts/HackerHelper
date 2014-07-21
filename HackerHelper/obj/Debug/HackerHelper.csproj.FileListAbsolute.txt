@@ -12,3 +12,4 @@ E:\VSProject\HackerHelper\HackerHelper\bin\Debug\log4net.xml
 E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.usercontrols.googleUrlCapture.resources
 E:\VSProject\HackerHelper\HackerHelper\bin\Debug\Newtonsoft.Json.dll
 E:\VSProject\HackerHelper\HackerHelper\bin\Debug\Newtonsoft.Json.xml
+E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.csprojResolveAssemblyReference.cache
