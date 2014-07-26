@@ -1,0 +1,22 @@
+[2014-07-02 14:27:16] [INFO] mgr startting...
+[2014-07-02 14:27:16] [INFO] wait connection
+[2014-07-02 14:30:11] [INFO] get a connection from:('127.0.0.1', 5496),headers:{'action': 'start', 'task_ids': '4', 'module': 'SCAN_MODULE', 'signature': 'f24f161cb06c9df1f33b5772e52dd194'}
+[2014-07-02 14:30:11] [DEBUG] ------------task start------------
+[2014-07-02 14:30:11] [INFO] SCAN_MODULE start a new task,task_id:4,pid:7792
+[2014-07-02 14:43:19] [INFO] get a connection from:('127.0.0.1', 6666),headers:{'action': 'start', 'task_ids': '5', 'module': 'SCAN_MODULE', 'signature': 'f24f161cb06c9df1f33b5772e52dd194'}
+[2014-07-02 14:43:19] [DEBUG] ------------task start------------
+[2014-07-02 14:43:19] [INFO] SCAN_MODULE start a new task,task_id:5,pid:8880
+[2014-07-02 14:49:27] [INFO] get a connection from:('127.0.0.1', 11034),headers:{'action': 'stop', 'task_ids': '5', 'module': 'SCAN_MODULE', 'signature': 'f24f161cb06c9df1f33b5772e52dd194'}
+[2014-07-02 14:49:27] [DEBUG] ------------task stop------------
+[2014-07-02 14:49:27] [INFO] SCAN_MODULE stop a new task,task_id:5,pid:8880
+[2014-07-02 15:13:12] [INFO] get a connection from:('127.0.0.1', 11527),headers:{'action': 'start', 'task_ids': '5', 'module': 'SCAN_MODULE', 'signature': 'f24f161cb06c9df1f33b5772e52dd194'}
+[2014-07-02 15:13:12] [DEBUG] ------------task start------------
+[2014-07-02 15:13:12] [INFO] SCAN_MODULE start a new task,task_id:5,pid:5060
+[2014-07-02 15:57:41] [INFO] get a connection from:('127.0.0.1', 12103),headers:{'action': 'start', 'task_ids': '5', 'module': 'SCAN_MODULE', 'signature': 'f24f161cb06c9df1f33b5772e52dd194'}
+[2014-07-02 15:57:41] [DEBUG] ------------task start------------
+[2014-07-02 15:57:46] [INFO] get a connection from:('127.0.0.1', 12110),headers:{'action': 'stop', 'task_ids': '5', 'module': 'SCAN_MODULE', 'signature': 'f24f161cb06c9df1f33b5772e52dd194'}
+[2014-07-02 15:57:46] [DEBUG] ------------task stop------------
+[2014-07-02 15:57:46] [INFO] SCAN_MODULE stop a new task,task_id:5,pid:5060
+[2014-07-02 15:59:14] [INFO] get a connection from:('127.0.0.1', 12167),headers:{'action': 'continue_start', 'task_ids': '5', 'module': 'SCAN_MODULE', 'signature': 'f24f161cb06c9df1f33b5772e52dd194'}
+[2014-07-02 15:59:14] [DEBUG] ------------task start------------
+[2014-07-02 15:59:14] [INFO] SCAN_MODULE start a new task,task_id:5,pid:1060
