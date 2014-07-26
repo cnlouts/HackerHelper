@@ -51,7 +51,8 @@ namespace HackerHelper.usercontrols
         {
             //https://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=cnlouts&rsz=8&start=5
             string result = "";
-            string keyword = HttpUtility.UrlEncode(this.txtKeywords.Text);
+            //string keyword = HttpUtility.UrlEncode(this.txtKeywords.Text);
+            string keyword = this.txtKeywords.Text;
             this.progressBar1.Maximum = 8*Convert.ToInt32(pageNum);
             this.progressBar1.Value = 0;
             this.progressBar1.Step = 1;
@@ -65,10 +66,17 @@ namespace HackerHelper.usercontrols
                     client.DefaultRequestHeaders.Add("User-Agent",
                      "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0");
                     client.DefaultRequestHeaders.Add("Referer", referer.Scheme + "://" + referer.Host);
-                    HttpResponseMessage response = await client.GetAsync(url);
-                    if (response.IsSuccessStatusCode)
+                    try
                     {
-                        result = await response.Content.ReadAsStringAsync();
+                        HttpResponseMessage response = await client.GetAsync(url);
+                        if (response.IsSuccessStatusCode)
+                        {
+                            result = await response.Content.ReadAsStringAsync();
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show(e.Message);
                     }
 
                 }
@@ -76,14 +84,15 @@ namespace HackerHelper.usercontrols
                 //string responseDetails = (string)jsonObj.SelectToken("responseDetails");
                 //JObject cursorJson = (JObject)jsonObj.SelectToken("responseData.cursor");
                 //JArray cursorPages = (JArray)jsonObj.SelectToken("responseData.cursor.pages");
-                JArray resultsJson = (JArray)jsonObj.SelectToken("responseData.results");
-                for (int i = 0; i < resultsJson.Count; i++)
+                var resultsJson = (JArray)jsonObj.SelectToken("responseData.results");
+                foreach (JToken t in resultsJson)
                 {
                     //resultsJson[i]["url"];
                     int index = this.dataGridView1.Rows.Add();
                     this.dataGridView1.Rows[index].Cells[0].Value = index;
-                    this.dataGridView1.Rows[index].Cells[1].Value = resultsJson[i]["url"];
-                    this.dataGridView1.Rows[index].Cells[2].Value = resultsJson[i]["content"];
+                    //this.dataGridView1.Rows[index].Cells[1].Value = t["url"];unescapedUrl
+                    this.dataGridView1.Rows[index].Cells[1].Value = t["unescapedUrl"];
+                    this.dataGridView1.Rows[index].Cells[2].Value = t["content"];
                     this.progressBar1.Value += this.progressBar1.Step;
                 }
             }
@@ -114,7 +123,7 @@ namespace HackerHelper.usercontrols
             StringBuilder sbBuilder = new StringBuilder();
             for (int i = 0; i < this.dataGridView1.Rows.Count; i++)
             {
-                sbBuilder.Append(string.Format("{1}{2}", this.dataGridView1.Rows[i].Cells[1].Value,  Environment.NewLine));
+                sbBuilder.Append(string.Format("{0}{1}", this.dataGridView1.Rows[i].Cells[1].Value,  Environment.NewLine));
             }
             //使用异步写入文件
             using (StreamWriter sw = new StreamWriter(savePath))

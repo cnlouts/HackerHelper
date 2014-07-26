@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("web目录扫描");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("webShell暴力破解");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("bing站点查询");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("google站点抓取");
             System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("WEB", new System.Windows.Forms.TreeNode[] {
             treeNode1,
@@ -82,7 +82,7 @@
             treeNode1.Name = "node1";
             treeNode1.Text = "web目录扫描";
             treeNode2.Name = "node2";
-            treeNode2.Text = "webShell暴力破解";
+            treeNode2.Text = "bing站点查询";
             treeNode3.Name = "node3";
             treeNode3.Text = "google站点抓取";
             treeNode4.Name = "node0";

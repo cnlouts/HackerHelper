@@ -13,3 +13,8 @@ E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.usercontrols.googl
 E:\VSProject\HackerHelper\HackerHelper\bin\Debug\Newtonsoft.Json.dll
 E:\VSProject\HackerHelper\HackerHelper\bin\Debug\Newtonsoft.Json.xml
 E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.csprojResolveAssemblyReference.cache
+E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.usercontrols.dedeShell.resources
+E:\VSProject\HackerHelper\HackerHelper\obj\Debug\HackerHelper.usercontrols.cnbingCapture.resources
+E:\VSProject\HackerHelper\HackerHelper\bin\Debug\HtmlAgilityPack.dll
+E:\VSProject\HackerHelper\HackerHelper\bin\Debug\HtmlAgilityPack.pdb
+E:\VSProject\HackerHelper\HackerHelper\bin\Debug\HtmlAgilityPack.xml

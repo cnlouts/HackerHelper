@@ -24,11 +24,15 @@ namespace HackerHelper
             switch (name)
             {
                 case "node1":
-                    splitContainer1.Panel2.Controls.Clear();
+                    this.splitContainer1.Panel2.Controls.Clear();
                     this.splitContainer1.Panel2.Controls.Add(new WebDirForce());
                     break;
+                case "node2":
+                    this.splitContainer1.Panel2.Controls.Clear();
+                    this.splitContainer1.Panel2.Controls.Add(new cnbingCapture());
+                    break;
                 case "node3":
-                    splitContainer1.Panel2.Controls.Clear();
+                    this.splitContainer1.Panel2.Controls.Clear();
                     this.splitContainer1.Panel2.Controls.Add(new googleUrlCapture());
                     break;
             }
