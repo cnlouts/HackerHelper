@@ -25,11 +25,12 @@ HackerHelper\HackerHelper\bin\Debug
 1：使用PHP 还是 aspx 想练习PHP毕竟做安全的貌似PHP不会，说出去都有点那什么啊！ <br />
 2：就算是练习PHP吧<br />
 
-bing ip:xxx.xxx.xxx.xxx ok 2014-07-29
+bing ip:xxx.xxx.xxx.xxx 
 -----------------------------------
-###已经完毕
+###已经完毕 
+2014-07-29 <br />
 
-
-###联系方式
-###[Email cn4louts#gmail.com](cn4louts@gmail.com)
-###[我的网站tmxk.org](http://www.tmxk.org)
+联系方式
+-----------------------------------
+[Email:cn4louts#gmail.com](cn4louts@gmail.com)
+[我的网站tmxk.org](http://www.tmxk.org)
