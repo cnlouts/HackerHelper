@@ -107,10 +107,9 @@
             this.ID,
             this.PATH,
             this.STATUS});
-            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView.Location = new System.Drawing.Point(0, 103);
+            this.dataGridView.Location = new System.Drawing.Point(-3, 99);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(461, 427);
+            this.dataGridView.Size = new System.Drawing.Size(461, 420);
             this.dataGridView.TabIndex = 6;
             // 
             // ID

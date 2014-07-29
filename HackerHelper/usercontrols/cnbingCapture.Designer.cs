@@ -1,6 +1,6 @@
 ﻿namespace HackerHelper.usercontrols
 {
-    partial class cnbingCapture
+    partial class CnbingCapture
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -30,51 +30,44 @@
         {
             this.btnClear = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.cmbPageNum = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnOutput = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtKeywords = new System.Windows.Forms.TextBox();
             this.lblInfo = new System.Windows.Forms.Label();
             this.txtResult = new System.Windows.Forms.TextBox();
+            this.cmbchoice = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(499, 41);
+            this.btnClear.Location = new System.Drawing.Point(495, 44);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 27);
             this.btnClear.TabIndex = 17;
             this.btnClear.Text = "清空";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(168, 41);
+            this.progressBar1.Location = new System.Drawing.Point(166, 44);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(323, 23);
             this.progressBar1.TabIndex = 16;
-            // 
-            // cmbPageNum
-            // 
-            this.cmbPageNum.FormattingEnabled = true;
-            this.cmbPageNum.Location = new System.Drawing.Point(76, 41);
-            this.cmbPageNum.Name = "cmbPageNum";
-            this.cmbPageNum.Size = new System.Drawing.Size(86, 23);
-            this.cmbPageNum.TabIndex = 15;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 15);
+            this.label1.Size = new System.Drawing.Size(69, 15);
             this.label1.TabIndex = 14;
-            this.label1.Text = "限制";
+            this.label1.Text = "单个ORC段";
             // 
             // btnOutput
             // 
-            this.btnOutput.Location = new System.Drawing.Point(590, 41);
+            this.btnOutput.Location = new System.Drawing.Point(588, 44);
             this.btnOutput.Name = "btnOutput";
             this.btnOutput.Size = new System.Drawing.Size(87, 27);
             this.btnOutput.TabIndex = 13;
@@ -112,24 +105,36 @@
             this.txtResult.Location = new System.Drawing.Point(0, 79);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
+            this.txtResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtResult.Size = new System.Drawing.Size(677, 567);
             this.txtResult.TabIndex = 18;
             // 
-            // cnbingCapture
+            // cmbchoice
+            // 
+            this.cmbchoice.FormattingEnabled = true;
+            this.cmbchoice.Items.AddRange(new object[] {
+            "单IP",
+            "C段"});
+            this.cmbchoice.Location = new System.Drawing.Point(76, 44);
+            this.cmbchoice.Name = "cmbchoice";
+            this.cmbchoice.Size = new System.Drawing.Size(84, 23);
+            this.cmbchoice.TabIndex = 19;
+            // 
+            // CnbingCapture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cmbchoice);
             this.Controls.Add(this.txtResult);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.cmbPageNum);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOutput);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtKeywords);
             this.Controls.Add(this.lblInfo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Name = "cnbingCapture";
+            this.Name = "CnbingCapture";
             this.Size = new System.Drawing.Size(680, 649);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -140,12 +145,12 @@
 
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ComboBox cmbPageNum;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnOutput;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.TextBox txtKeywords;
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.TextBox txtResult;
+        private System.Windows.Forms.ComboBox cmbchoice;
     }
 }

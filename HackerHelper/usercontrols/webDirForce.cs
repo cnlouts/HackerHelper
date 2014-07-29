@@ -71,10 +71,10 @@ namespace HackerHelper.usercontrols
                     var response = await client.GetAsync(url);
                     statusCode = response.StatusCode.ToString();
                 }
-                catch (Exception)
-                {
-
-                    throw;
+                catch (Exception ex)
+                {   //远程主机会拒绝连接 导致异常抛出
+                    //MessageBox.Show(ex.ToString());
+                    statusCode = "None";
                 }
             }
             return statusCode;

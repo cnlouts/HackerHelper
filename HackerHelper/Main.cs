@@ -29,7 +29,7 @@ namespace HackerHelper
                     break;
                 case "node2":
                     this.splitContainer1.Panel2.Controls.Clear();
-                    this.splitContainer1.Panel2.Controls.Add(new cnbingCapture());
+                    this.splitContainer1.Panel2.Controls.Add(new CnbingCapture());
                     break;
                 case "node3":
                     this.splitContainer1.Panel2.Controls.Clear();
